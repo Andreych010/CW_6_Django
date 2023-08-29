@@ -71,9 +71,11 @@ def num_letter_client(request):
     num_letters = Newsletter.objects.count()
     num_letter_create = Newsletter.objects.filter(status='created').count()
     num_letter_started = Newsletter.objects.filter(status='started').count()
-    data = ({'num_client': num_client, 'num_letters': num_letters,
+    data = ({'num_client': num_client,
+             'num_letters': num_letters,
              'num_letter_create': num_letter_create,
-             'num_letter_started': num_letter_started, 'title': 'Статистика'
+             'num_letter_started': num_letter_started,
+             'title': 'Статистика'
     })
     return render(request, 'blog/count_list.html', context=data)
 
