@@ -26,21 +26,17 @@ python3 -m venv venv
 
 - примените миграции
 ```angular2html
-python manage.py migrate
+python3 manage.py migrate
 ```
 - выполните команду для установки суперюзера, пароль и логин для входа находятся в файле [csu.py](clients%2Fmanagement%2Fcommands%2Fcsu.py)
 ```angular2html
 python3 manage.py csu
 ```
-- права пользователей распределяются на странице администратора в гуппе Менеджер
-```angular2html
-127.0.0.1:8000/admin/
-```
-- запустите celery в первом терминале
+- запустите (проверьте работу) celery в первом терминале
 ```angular2html
 celery -A clients worker -l info
 ```
-- запустите celery-beat во втором терминале
+- запустите (проверьте работу) celery-beat во втором терминале
 ```angular2html
 celery -A clients beat -l INFO
 ```
@@ -48,7 +44,7 @@ celery -A clients beat -l INFO
 ```angular2html
 python3 manage.py mail_sender
 ```
-- при желании загрузите фикстуры)
+- при желании загрузите фикстуры:)
 ```angular2html
 python3 manage.py loaddata clients_data.json
 ```
@@ -59,9 +55,11 @@ python3 manage.py loaddata blog_data.json
 ```angular2html
 python3 manage.py runserver
 ```
+- права пользователей распределяются на странице администратора [127.0.0.1:8000/admin/](127.0.0.1:8000/admin/) в гурппе Менеджер 
+
 - перед закрытием IDE остановите сервер django
 ```angular2html
 pkill -f runserver
 ```
-P.S При попытке пользователя работать не со своим клиентом или рассылкой программа выдаст ошибку Http404
+P.S При попытке пользователя работать не со своим клиентами или рассылками программа выдаст ошибку Http404
 
