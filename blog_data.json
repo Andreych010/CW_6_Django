@@ -1,0 +1,58 @@
+[
+  {
+    "model": "blog.blogpost",
+    "pk": 1,
+    "fields": {
+      "title": "test1",
+      "slug": "test1",
+      "body": "somebody",
+      "preview": "",
+      "date_creation": "2023-08-29",
+      "sign_publication": false,
+      "number_views": null,
+      "newsletter": 1
+    }
+  },
+  {
+    "model": "blog.blogpost",
+    "pk": 2,
+    "fields": {
+      "title": "test2",
+      "slug": "test2",
+      "body": "somebody",
+      "preview": "",
+      "date_creation": "2023-08-29",
+      "sign_publication": false,
+      "number_views": null,
+      "newsletter": 3
+    }
+  },
+  {
+    "model": "blog.blogpost",
+    "pk": 3,
+    "fields": {
+      "title": "test3",
+      "slug": "test3",
+      "body": "somebody",
+      "preview": "",
+      "date_creation": "2023-08-29",
+      "sign_publication": false,
+      "number_views": null,
+      "newsletter": 4
+    }
+  },
+  {
+    "model": "blog.blogpost",
+    "pk": 4,
+    "fields": {
+      "title": "test4",
+      "slug": "test4",
+      "body": "somebody",
+      "preview": "",
+      "date_creation": "2023-08-29",
+      "sign_publication": false,
+      "number_views": null,
+      "newsletter": 1
+    }
+  }
+]

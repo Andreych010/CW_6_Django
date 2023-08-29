@@ -1,0 +1,226 @@
+[
+  {
+    "model": "clients.user",
+    "pk": 1,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$5mdJLA7H84EX2J3C7DNOp6$mU5F0rwBDcfnA+1f0urjMg8PG0llpmJ5Cquvauboi/A=",
+      "last_login": "2023-08-29T11:44:51.723Z",
+      "is_superuser": true,
+      "first_name": "Admin",
+      "last_name": "Andrey",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2023-08-29T10:33:16.234Z",
+      "username": null,
+      "surname": "",
+      "email": "admin@andrey.pro",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "clients.user",
+    "pk": 2,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$EthNgYwMaAXENleTDXMn2e$9dpc2RXIk5gD6k5UZgXacxxvFO0x4P+ZZyUZaENNUnA=",
+      "last_login": "2023-08-29T13:24:35.442Z",
+      "is_superuser": false,
+      "first_name": "",
+      "last_name": "",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2023-08-29T10:34:36Z",
+      "username": null,
+      "surname": "Ваня",
+      "email": "andmarchu8@gmail.com",
+      "groups": [
+        1
+      ],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "clients.user",
+    "pk": 3,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$0G1nvuZz9Gb0wHir5UqcGT$uJZwUOL1htD/PRZLn8f/kOk+tWNZ0ezf7Et/DYsl+js=",
+      "last_login": "2023-08-29T12:26:22.955Z",
+      "is_superuser": false,
+      "first_name": "",
+      "last_name": "",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2023-08-29T10:37:02Z",
+      "username": null,
+      "surname": "Петя",
+      "email": "marchuk-8282@mail.ru",
+      "groups": [
+        1
+      ],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "clients.client",
+    "pk": 1,
+    "fields": {
+      "email": "marchuk-8282@mail.ru",
+      "full_name": "Петя",
+      "comment": "фукварыывкр",
+      "avatar": "",
+      "user": 3,
+      "is_blocked": false
+    }
+  },
+  {
+    "model": "clients.client",
+    "pk": 2,
+    "fields": {
+      "email": "andmarchu8@gmail.com",
+      "full_name": "ВАня",
+      "comment": "ывуарвкер",
+      "avatar": "",
+      "user": 3,
+      "is_blocked": false
+    }
+  },
+  {
+    "model": "clients.client",
+    "pk": 3,
+    "fields": {
+      "email": "marchuk.sveta@list.ru",
+      "full_name": "Светланова",
+      "comment": "укфцпуакп",
+      "avatar": "",
+      "user": 2,
+      "is_blocked": false
+    }
+  },
+  {
+    "model": "clients.newsletter",
+    "pk": 1,
+    "fields": {
+      "time": "13:30:00",
+      "period": "daily",
+      "status": "done",
+      "user": 3,
+      "client": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "clients.newsletter",
+    "pk": 3,
+    "fields": {
+      "time": "15:30:00",
+      "period": "weekly",
+      "status": "done",
+      "user": 2,
+      "client": [
+        3
+      ]
+    }
+  },
+  {
+    "model": "clients.newsletter",
+    "pk": 4,
+    "fields": {
+      "time": "17:30:00",
+      "period": "daily",
+      "status": "created",
+      "user": 2,
+      "client": [
+        3
+      ]
+    }
+  },
+  {
+    "model": "clients.message",
+    "pk": 1,
+    "fields": {
+      "theme": "привет пока",
+      "letter": "чваитав",
+      "newsletter": 1
+    }
+  },
+  {
+    "model": "clients.message",
+    "pk": 3,
+    "fields": {
+      "theme": "ytllo",
+      "letter": "hi",
+      "newsletter": 3
+    }
+  },
+  {
+    "model": "clients.message",
+    "pk": 4,
+    "fields": {
+      "theme": "тест",
+      "letter": "тест",
+      "newsletter": 4
+    }
+  },
+  {
+    "model": "clients.log",
+    "pk": 1,
+    "fields": {
+      "date_attempt": "2023-08-29T11:39:19.027Z",
+      "state": "started",
+      "response_server": "200",
+      "message": 1
+    }
+  },
+  {
+    "model": "clients.log",
+    "pk": 2,
+    "fields": {
+      "date_attempt": "2023-08-29T11:39:19.780Z",
+      "state": "done",
+      "response_server": "200",
+      "message": 1
+    }
+  },
+  {
+    "model": "clients.log",
+    "pk": 3,
+    "fields": {
+      "date_attempt": "2023-08-29T11:39:19.783Z",
+      "state": "started",
+      "response_server": "200",
+      "message": 1
+    }
+  },
+  {
+    "model": "clients.log",
+    "pk": 4,
+    "fields": {
+      "date_attempt": "2023-08-29T11:39:20.637Z",
+      "state": "done",
+      "response_server": "200",
+      "message": 1
+    }
+  },
+  {
+    "model": "clients.log",
+    "pk": 11,
+    "fields": {
+      "date_attempt": "2023-08-29T13:26:17.587Z",
+      "state": "started",
+      "response_server": "200",
+      "message": 3
+    }
+  },
+  {
+    "model": "clients.log",
+    "pk": 12,
+    "fields": {
+      "date_attempt": "2023-08-29T13:26:18.388Z",
+      "state": "done",
+      "response_server": "200",
+      "message": 3
+    }
+  }
+]
