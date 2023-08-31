@@ -1,5 +1,7 @@
 from django.contrib.auth.views import LogoutView
 from django.urls import path
+from django.views.decorators.cache import cache_page
+
 from clients.views import ClientListView, ClientCreateView, Client_cardDetailView, NewsletterListView, ClientUpdateView, \
     ClientDeleteView, NewsletterCreateView, Newsletter_cardDetailView, LogListView, UserLoginView, RegisterView, \
     ProfileView, ConfirmView, user_gen_password, NewsletterDeleteView, TaskToggleView, ClientBlockView
@@ -8,7 +10,7 @@ from clients.apps import ClientsConfig
 app_name = ClientsConfig.name
 
 urlpatterns = [
-    path('home/', ClientListView.as_view(), name='home'),
+    path('home/', cache_page(60)(ClientListView.as_view()), name='home'),
     path("client_create/", ClientCreateView.as_view(), name="client_create"),
     path("client_detail/<int:pk>/", Client_cardDetailView.as_view(), name="client_detail"),
     path("client_update/<int:pk>/", ClientUpdateView.as_view(), name="client_update"),

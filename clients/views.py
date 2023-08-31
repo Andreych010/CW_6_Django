@@ -21,6 +21,7 @@ from CW_6_Django import settings
 from clients.forms import ClientForm, MessageForm, NewsletterForm, LoginUserForm, UserRegisterForm, UserProfileForm
 from clients.mail_sender import mail_send
 from clients.models import Client, Newsletter, Log, Message, User, Code
+from clients.serives import get_object
 
 
 class ClientListView(LoginRequiredMixin, ListView):
@@ -78,6 +79,7 @@ class ClientBlockView(LoginRequiredMixin, PermissionRequiredMixin, UpdateView):
 class Client_cardDetailView(LoginRequiredMixin, DetailView):
     model = Client
 
+
     def get_object(self, queryset=None):
         self.object = super().get_object(queryset)
         if self.object.user != self.request.user:
@@ -121,10 +123,15 @@ class NewsletterListView(LoginRequiredMixin, ListView):
     #     return Newsletter.objects.filter(user=self.request.user)
 
 
-class Newsletter_cardDetailView(LoginRequiredMixin, DetailView):
+class Newsletter_cardDetailView(LoginRequiredMixin, PermissionRequiredMixin, DetailView):
     model = Newsletter
+    permission_required = 'clients.view_newsletter'
 
     def get_object(self, queryset=None):
+        '''
+        Проверяет права доступа, если пользователь пытается редактировать не свой товар
+        выкидывает ошибку Http404
+        '''
         self.object = super().get_object(queryset)
         if self.object.user != self.request.user:
             raise Http404

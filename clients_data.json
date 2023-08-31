@@ -22,8 +22,8 @@
     "model": "clients.user",
     "pk": 2,
     "fields": {
-      "password": "pbkdf2_sha256$600000$EthNgYwMaAXENleTDXMn2e$9dpc2RXIk5gD6k5UZgXacxxvFO0x4P+ZZyUZaENNUnA=",
-      "last_login": "2023-08-29T13:24:35.442Z",
+      "password": "pbkdf2_sha256$600000$U8zLr4ykiXi0Vs4FY88nj1$HZOZceZn3CzrfPmF3DptEa7h/SKF9yXTdEfwMh3i1t8=",
+      "last_login": "2023-08-29T16:47:16.940Z",
       "is_superuser": false,
       "first_name": "",
       "last_name": "",
@@ -97,6 +97,18 @@
     }
   },
   {
+    "model": "clients.client",
+    "pk": 4,
+    "fields": {
+      "email": "MAndreych@yandex.ru",
+      "full_name": "Марчук",
+      "comment": "гпидолдтлтдьтдьлдьтл",
+      "avatar": "",
+      "user": 2,
+      "is_blocked": false
+    }
+  },
+  {
     "model": "clients.newsletter",
     "pk": 1,
     "fields": {
@@ -125,14 +137,144 @@
   },
   {
     "model": "clients.newsletter",
-    "pk": 4,
+    "pk": 19,
     "fields": {
-      "time": "17:30:00",
+      "time": "03:00:00",
+      "period": "daily",
+      "status": "created",
+      "user": 2,
+      "client": [
+        4
+      ]
+    }
+  },
+  {
+    "model": "clients.newsletter",
+    "pk": 21,
+    "fields": {
+      "time": "03:35:00",
+      "period": "daily",
+      "status": "created",
+      "user": 2,
+      "client": [
+        4
+      ]
+    }
+  },
+  {
+    "model": "clients.newsletter",
+    "pk": 22,
+    "fields": {
+      "time": "02:40:00",
+      "period": "daily",
+      "status": "created",
+      "user": 2,
+      "client": [
+        4
+      ]
+    }
+  },
+  {
+    "model": "clients.newsletter",
+    "pk": 24,
+    "fields": {
+      "time": "02:48:00",
       "period": "daily",
       "status": "created",
       "user": 2,
       "client": [
         3
+      ]
+    }
+  },
+  {
+    "model": "clients.newsletter",
+    "pk": 25,
+    "fields": {
+      "time": "12:00:00",
+      "period": "daily",
+      "status": "created",
+      "user": 2,
+      "client": [
+        4
+      ]
+    }
+  },
+  {
+    "model": "clients.newsletter",
+    "pk": 26,
+    "fields": {
+      "time": "12:15:00",
+      "period": "daily",
+      "status": "created",
+      "user": 2,
+      "client": [
+        3
+      ]
+    }
+  },
+  {
+    "model": "clients.newsletter",
+    "pk": 27,
+    "fields": {
+      "time": "13:10:00",
+      "period": "daily",
+      "status": "created",
+      "user": 2,
+      "client": [
+        4
+      ]
+    }
+  },
+  {
+    "model": "clients.newsletter",
+    "pk": 28,
+    "fields": {
+      "time": "13:15:00",
+      "period": "daily",
+      "status": "created",
+      "user": 2,
+      "client": [
+        4
+      ]
+    }
+  },
+  {
+    "model": "clients.newsletter",
+    "pk": 29,
+    "fields": {
+      "time": "14:17:00",
+      "period": "daily",
+      "status": "created",
+      "user": 2,
+      "client": [
+        4
+      ]
+    }
+  },
+  {
+    "model": "clients.newsletter",
+    "pk": 30,
+    "fields": {
+      "time": "14:47:00",
+      "period": "weekly",
+      "status": "created",
+      "user": 2,
+      "client": [
+        4
+      ]
+    }
+  },
+  {
+    "model": "clients.newsletter",
+    "pk": 31,
+    "fields": {
+      "time": "14:48:00",
+      "period": "weekly",
+      "status": "created",
+      "user": 2,
+      "client": [
+        4
       ]
     }
   },
@@ -156,11 +298,92 @@
   },
   {
     "model": "clients.message",
-    "pk": 4,
+    "pk": 19,
     "fields": {
-      "theme": "тест",
-      "letter": "тест",
-      "newsletter": 4
+      "theme": "900",
+      "letter": "уцкипывуаиывач",
+      "newsletter": 19
+    }
+  },
+  {
+    "model": "clients.message",
+    "pk": 21,
+    "fields": {
+      "theme": "778",
+      "letter": "aerlkjsdzfm.,zdvm,m.,dzm,.df",
+      "newsletter": 21
+    }
+  },
+  {
+    "model": "clients.message",
+    "pk": 22,
+    "fields": {
+      "theme": "777",
+      "letter": "sdzfxnbbsxgn",
+      "newsletter": 22
+    }
+  },
+  {
+    "model": "clients.message",
+    "pk": 23,
+    "fields": {
+      "theme": "779",
+      "letter": "rtgnxfg hghgh",
+      "newsletter": 24
+    }
+  },
+  {
+    "model": "clients.message",
+    "pk": 24,
+    "fields": {
+      "theme": "000",
+      "letter": "ldsfkjm.zdf;",
+      "newsletter": 25
+    }
+  },
+  {
+    "model": "clients.message",
+    "pk": 25,
+    "fields": {
+      "theme": "001",
+      "letter": "ыкеытрочапсроенвс",
+      "newsletter": 26
+    }
+  },
+  {
+    "model": "clients.message",
+    "pk": 26,
+    "fields": {
+      "theme": "002",
+      "letter": "dthjujhmj",
+      "newsletter": 27
+    }
+  },
+  {
+    "model": "clients.message",
+    "pk": 27,
+    "fields": {
+      "theme": "005",
+      "letter": "sfthrstndt",
+      "newsletter": 28
+    }
+  },
+  {
+    "model": "clients.message",
+    "pk": 28,
+    "fields": {
+      "theme": "007",
+      "letter": "gfmjryfujujh",
+      "newsletter": 29
+    }
+  },
+  {
+    "model": "clients.message",
+    "pk": 29,
+    "fields": {
+      "theme": "006",
+      "letter": "khgklfyhj",
+      "newsletter": 31
     }
   },
   {
@@ -221,6 +444,326 @@
       "state": "done",
       "response_server": "200",
       "message": 3
+    }
+  },
+  {
+    "model": "clients.log",
+    "pk": 15,
+    "fields": {
+      "date_attempt": "2023-08-30T21:23:10.388Z",
+      "state": "started",
+      "response_server": "200",
+      "message": 1
+    }
+  },
+  {
+    "model": "clients.log",
+    "pk": 16,
+    "fields": {
+      "date_attempt": "2023-08-30T21:23:11.021Z",
+      "state": "done",
+      "response_server": "200",
+      "message": 1
+    }
+  },
+  {
+    "model": "clients.log",
+    "pk": 17,
+    "fields": {
+      "date_attempt": "2023-08-30T21:23:11.024Z",
+      "state": "started",
+      "response_server": "200",
+      "message": 1
+    }
+  },
+  {
+    "model": "clients.log",
+    "pk": 18,
+    "fields": {
+      "date_attempt": "2023-08-30T21:23:11.637Z",
+      "state": "done",
+      "response_server": "200",
+      "message": 1
+    }
+  },
+  {
+    "model": "clients.log",
+    "pk": 19,
+    "fields": {
+      "date_attempt": "2023-08-30T21:23:11.656Z",
+      "state": "started",
+      "response_server": "200",
+      "message": 3
+    }
+  },
+  {
+    "model": "clients.log",
+    "pk": 20,
+    "fields": {
+      "date_attempt": "2023-08-30T21:23:12.294Z",
+      "state": "1",
+      "response_server": "(554, b'5.7.1 Message rejected under suspicion of SPAM; https://ya.cc/1IrBc 1693430592-BNZtfUODdqM0-R6qC7N5K')",
+      "message": 3
+    }
+  },
+  {
+    "model": "clients.log",
+    "pk": 31,
+    "fields": {
+      "date_attempt": "2023-08-30T21:23:53.149Z",
+      "state": "started",
+      "response_server": "200",
+      "message": 1
+    }
+  },
+  {
+    "model": "clients.log",
+    "pk": 32,
+    "fields": {
+      "date_attempt": "2023-08-30T21:23:53.965Z",
+      "state": "done",
+      "response_server": "200",
+      "message": 1
+    }
+  },
+  {
+    "model": "clients.log",
+    "pk": 33,
+    "fields": {
+      "date_attempt": "2023-08-30T21:23:53.971Z",
+      "state": "started",
+      "response_server": "200",
+      "message": 1
+    }
+  },
+  {
+    "model": "clients.log",
+    "pk": 34,
+    "fields": {
+      "date_attempt": "2023-08-30T21:23:54.605Z",
+      "state": "done",
+      "response_server": "200",
+      "message": 1
+    }
+  },
+  {
+    "model": "clients.log",
+    "pk": 35,
+    "fields": {
+      "date_attempt": "2023-08-30T21:23:54.626Z",
+      "state": "started",
+      "response_server": "200",
+      "message": 3
+    }
+  },
+  {
+    "model": "clients.log",
+    "pk": 36,
+    "fields": {
+      "date_attempt": "2023-08-30T21:23:55.186Z",
+      "state": "done",
+      "response_server": "200",
+      "message": 3
+    }
+  },
+  {
+    "model": "clients.log",
+    "pk": 47,
+    "fields": {
+      "date_attempt": "2023-08-30T21:49:00.364Z",
+      "state": "started",
+      "response_server": "200",
+      "message": 1
+    }
+  },
+  {
+    "model": "clients.log",
+    "pk": 48,
+    "fields": {
+      "date_attempt": "2023-08-30T21:49:01.220Z",
+      "state": "done",
+      "response_server": "200",
+      "message": 1
+    }
+  },
+  {
+    "model": "clients.log",
+    "pk": 49,
+    "fields": {
+      "date_attempt": "2023-08-30T21:49:01.227Z",
+      "state": "started",
+      "response_server": "200",
+      "message": 1
+    }
+  },
+  {
+    "model": "clients.log",
+    "pk": 50,
+    "fields": {
+      "date_attempt": "2023-08-30T21:49:01.922Z",
+      "state": "done",
+      "response_server": "200",
+      "message": 1
+    }
+  },
+  {
+    "model": "clients.log",
+    "pk": 51,
+    "fields": {
+      "date_attempt": "2023-08-30T21:49:01.963Z",
+      "state": "started",
+      "response_server": "200",
+      "message": 3
+    }
+  },
+  {
+    "model": "clients.log",
+    "pk": 52,
+    "fields": {
+      "date_attempt": "2023-08-30T21:49:02.842Z",
+      "state": "done",
+      "response_server": "200",
+      "message": 3
+    }
+  },
+  {
+    "model": "clients.log",
+    "pk": 75,
+    "fields": {
+      "date_attempt": "2023-08-30T23:50:57.350Z",
+      "state": "started",
+      "response_server": "200",
+      "message": 1
+    }
+  },
+  {
+    "model": "clients.log",
+    "pk": 76,
+    "fields": {
+      "date_attempt": "2023-08-30T23:50:58.048Z",
+      "state": "done",
+      "response_server": "200",
+      "message": 1
+    }
+  },
+  {
+    "model": "clients.log",
+    "pk": 77,
+    "fields": {
+      "date_attempt": "2023-08-30T23:50:58.053Z",
+      "state": "started",
+      "response_server": "200",
+      "message": 1
+    }
+  },
+  {
+    "model": "clients.log",
+    "pk": 78,
+    "fields": {
+      "date_attempt": "2023-08-30T23:50:58.782Z",
+      "state": "done",
+      "response_server": "200",
+      "message": 1
+    }
+  },
+  {
+    "model": "clients.log",
+    "pk": 79,
+    "fields": {
+      "date_attempt": "2023-08-30T23:50:58.800Z",
+      "state": "started",
+      "response_server": "200",
+      "message": 3
+    }
+  },
+  {
+    "model": "clients.log",
+    "pk": 80,
+    "fields": {
+      "date_attempt": "2023-08-30T23:50:59.457Z",
+      "state": "done",
+      "response_server": "200",
+      "message": 3
+    }
+  },
+  {
+    "model": "clients.log",
+    "pk": 81,
+    "fields": {
+      "date_attempt": "2023-08-30T23:50:59.467Z",
+      "state": "started",
+      "response_server": "200",
+      "message": 19
+    }
+  },
+  {
+    "model": "clients.log",
+    "pk": 82,
+    "fields": {
+      "date_attempt": "2023-08-30T23:51:00.242Z",
+      "state": "done",
+      "response_server": "200",
+      "message": 19
+    }
+  },
+  {
+    "model": "clients.log",
+    "pk": 83,
+    "fields": {
+      "date_attempt": "2023-08-30T23:51:00.262Z",
+      "state": "started",
+      "response_server": "200",
+      "message": 21
+    }
+  },
+  {
+    "model": "clients.log",
+    "pk": 84,
+    "fields": {
+      "date_attempt": "2023-08-30T23:51:01.108Z",
+      "state": "done",
+      "response_server": "200",
+      "message": 21
+    }
+  },
+  {
+    "model": "clients.log",
+    "pk": 85,
+    "fields": {
+      "date_attempt": "2023-08-30T23:51:01.114Z",
+      "state": "started",
+      "response_server": "200",
+      "message": 22
+    }
+  },
+  {
+    "model": "clients.log",
+    "pk": 86,
+    "fields": {
+      "date_attempt": "2023-08-30T23:51:01.865Z",
+      "state": "done",
+      "response_server": "200",
+      "message": 22
+    }
+  },
+  {
+    "model": "clients.log",
+    "pk": 87,
+    "fields": {
+      "date_attempt": "2023-08-30T23:51:01.870Z",
+      "state": "started",
+      "response_server": "200",
+      "message": 23
+    }
+  },
+  {
+    "model": "clients.log",
+    "pk": 88,
+    "fields": {
+      "date_attempt": "2023-08-30T23:51:02.478Z",
+      "state": "done",
+      "response_server": "200",
+      "message": 23
     }
   }
 ]
