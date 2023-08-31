@@ -34,11 +34,11 @@ python3 manage.py csu
 ```
 - запустите (проверьте работу) celery в первом терминале
 ```angular2html
-celery -A clients worker -l info
+celery -A CW_6_Django worker --loglevel=info
 ```
 - запустите (проверьте работу) celery-beat во втором терминале
 ```angular2html
-celery -A clients beat -l INFO
+celery -A CW_6_Django beat -l info -S django
 ```
 - выполните скрипт рассылки, который работает как из командой строки, так и по расписанию.
 ```angular2html
