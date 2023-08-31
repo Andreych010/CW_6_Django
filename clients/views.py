@@ -185,6 +185,12 @@ class NewsletterCreateView(LoginRequiredMixin, CreateView):
         return context_data
 
     def form_valid(self, form):
+        '''
+        Настройка периодических задач для отправки рассылок:
+        - один раз в день
+        - в неделю
+        - в месяц
+        '''
         formset = self.get_context_data()['formset']
         self.object = form.save(commit=False)
         self.object.status = Newsletter.STATUS_CREATED
